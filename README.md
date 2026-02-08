@@ -2,6 +2,8 @@
 
 A comprehensive cryptocurrency tracking and trading platform built with React and Node.js. CyrionTrade provides real-time cryptocurrency data, portfolio management, and advanced charting capabilities for traders and investors.
 
+Live Link : https://cyriontrade.pumapulse.org
+
 ## Table of Contents
 
 - [Overview](#overview)
@@ -12,12 +14,7 @@ A comprehensive cryptocurrency tracking and trading platform built with React an
 - [Configuration](#configuration)
 - [Running the Application](#running-the-application)
 - [Project Structure](#project-structure)
-- [API Documentation](#api-documentation)
-- [Development](#development)
-- [Testing](#testing)
-- [Deployment](#deployment)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## Overview
 
@@ -113,8 +110,8 @@ Before installing CyrionTrade, ensure you have the following software installed 
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/cyriontrade.git
-cd cyriontrade
+git clone https://github.com/cyriontrade/cyriontrade-test.git
+cd cyriontrade-test
 ```
 
 ### 2. Install Server Dependencies
@@ -304,236 +301,11 @@ cyriontrade/
 └── README.md                    # This file
 ```
 
-## API Documentation
-
-### Base URL
-
-Development: `http://localhost:5000/api`
-
-### Authentication Endpoints
-
-#### POST /api/auth/signup
-Create a new user account.
-
-**Request Body:**
-```json
-{
-  "email": "user@example.com",
-  "password": "securepassword",
-  "displayName": "John Doe"
-}
-```
-
-#### POST /api/auth/login
-Authenticate a user.
-
-**Request Body:**
-```json
-{
-  "email": "user@example.com",
-  "password": "securepassword"
-}
-```
-
-#### POST /api/auth/logout
-Logout the current user.
-
-#### GET /api/auth/verify
-Verify authentication token.
-
-### Cryptocurrency Endpoints
-
-#### GET /api/crypto/coins
-Get list of cryptocurrencies.
-
-**Query Parameters:**
-- `currency` (optional): Currency code (default: USD)
-
-#### GET /api/crypto/coin/:id
-Get detailed information for a specific coin.
-
-**Parameters:**
-- `id`: Coin identifier (e.g., bitcoin, ethereum)
-
-#### GET /api/crypto/chart/:id
-Get historical chart data for a coin.
-
-**Parameters:**
-- `id`: Coin identifier
-
-**Query Parameters:**
-- `days`: Number of days (1, 30, 90, 365)
-- `currency`: Currency code (default: USD)
-
-#### GET /api/crypto/trending
-Get trending cryptocurrencies.
-
-**Query Parameters:**
-- `currency` (optional): Currency code (default: USD)
-
-### Watchlist Endpoints
-
-#### GET /api/watchlist
-Get user's watchlist.
-
-#### POST /api/watchlist
-Add a coin to watchlist.
-
-**Request Body:**
-```json
-{
-  "coinId": "bitcoin"
-}
-```
-
-#### DELETE /api/watchlist/:coinId
-Remove a coin from watchlist.
-
-### User Endpoints
-
-#### GET /api/user/profile
-Get user profile information.
-
-#### PUT /api/user/profile
-Update user profile.
-
-### Referral Endpoints
-
-#### GET /api/referral/code
-Get user's referral code.
-
-#### GET /api/referral/stats
-Get referral statistics.
-
-#### POST /api/referral/apply
-Apply a referral code.
-
-### Bonus Endpoints
-
-#### GET /api/bonus/list
-Get available bonuses.
-
-#### GET /api/bonus/active
-Get active bonuses for user.
-
-#### POST /api/bonus/claim/:bonusId
-Claim a bonus.
-
-## Development
-
-### Code Style
-
-The project follows standard JavaScript/React conventions:
-
-- Use ES6+ syntax
-- Functional components with hooks
-- Consistent naming conventions
-- Proper code comments
-- ESLint configuration included
-
-### Development Tools
-
-- **React Developer Tools:** Browser extension for debugging React applications
-- **Redux DevTools:** For state management debugging (if applicable)
-- **Postman:** For API testing
-- **VS Code:** Recommended IDE with ESLint and Prettier extensions
-
-### Hot Reloading
-
-Both client and server support hot reloading during development:
-
-- Frontend: Automatic browser refresh on file changes
-- Backend: Nodemon automatically restarts server on file changes
-
-## Testing
-
-### Running Tests
-
-#### Frontend Tests
-
-```bash
-cd client
-npm test
-```
-
-#### Backend Tests
-
-```bash
-cd server
-npm test
-```
-
-### Test Coverage
-
-Generate test coverage report:
-
-```bash
-npm test -- --coverage
-```
-
-## Deployment
-
-### Frontend Deployment (Vercel)
-
-1. Install Vercel CLI:
-```bash
-npm install -g vercel
-```
-
-2. Deploy from client directory:
-```bash
-cd client
-vercel
-```
-
-3. Configure environment variables in Vercel dashboard
-
-### Backend Deployment (Vercel/Heroku)
-
-#### Vercel
-
-1. Deploy from server directory:
-```bash
-cd server
-vercel
-```
-
-2. Configure environment variables in Vercel dashboard
-
-#### Heroku
-
-1. Install Heroku CLI
-2. Create a new Heroku app:
-```bash
-heroku create your-app-name
-```
-
-3. Set environment variables:
-```bash
-heroku config:set NODE_ENV=production
-heroku config:set PORT=5000
-```
-
-4. Deploy:
-```bash
-git push heroku main
-```
-
-### Environment Variables for Production
-
-Ensure all environment variables are properly configured in your deployment platform:
-
-- Set `NODE_ENV=production`
-- Configure Firebase credentials
-- Set correct CORS origins
-- Add CoinGecko API key
-- Update API URLs
-
 ## Contributing
 
 ### Developer Test Task
 
-If you are completing the developer test task, please refer to [GUIDE.md](./GUIDE.md) for detailed requirements and submission guidelines.
+If you are completing the developer test task, please refer to [Guide.md](./Guide.md) for detailed requirements and submission guidelines.
 
 ### General Contributions
 
@@ -551,28 +323,7 @@ If you are completing the developer test task, please refer to [GUIDE.md](./GUID
 - Update documentation as needed
 - Ensure all tests pass before submitting PR
 
-## License
-
-This project is licensed under the MIT License. See the LICENSE file for details.
-
-## Support
-
-For questions, issues, or support:
-
-- Create an issue in the GitHub repository
-- Contact the development team
-- Check the documentation in [GUIDE.md](./GUIDE.md)
-
-## Acknowledgments
-
-- CoinGecko for cryptocurrency data API
-- Firebase for authentication and database services
-- Material-UI for React components
-- Chart.js for charting capabilities
-- The open-source community for various libraries and tools
-
 ---
 
-**Version:** 0.2.1  
 **Last Updated:** February 2026  
-**Maintained by:** CyrionTrade Development Team
+**Maintained by:** PumaPulse Development Team
