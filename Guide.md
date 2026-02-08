@@ -1,6 +1,6 @@
 # Fullstack Developer Technical Assessment
 
-### Assessment Overview
+## Assessment Overview
 
 Technical assessment for senior fullstack developers. Replace the existing Chart.js implementation with TradingView Lightweight Charts and implement advanced interactive features.
 
@@ -9,7 +9,8 @@ Technical assessment for senior fullstack developers. Replace the existing Chart
 ## Objective
 
 Migrate from Chart.js to TradingView Lightweight Charts and add interactive charting features that demonstrate senior-level expertise.
-### Current Implementation
+
+## Current Implementation
 
 The existing chart uses Chart.js and looks like this:
 
@@ -17,7 +18,7 @@ The existing chart uses Chart.js and looks like this:
 
 *Current Chart.js implementation that needs to be replaced*
 
-### Important Notes
+## Important Notes
 
 **API Requirements:**
 - The project uses CoinGecko API for cryptocurrency data
@@ -95,13 +96,13 @@ Create branch `feature/tradingview-chart` and submit a pull request with impleme
 
 This assessment is designed to evaluate real-world development skills. We are looking for:
 
-- **Quality over quantity:** Well-implemented core features are better than rushed complete features
-- **Problem-solving ability:** How you approach challenges and make decisions
-- **Code craftsmanship:** Clean, maintainable, and well-documented code
-- **Professional communication:** Clear documentation and commit messages
-- **Attention to detail:** Polish, error handling, and edge cases
+- Quality over quantity: Well-implemented core features are better than rushed complete features
+- Problem-solving ability: How you approach challenges and make decisions
+- Code craftsmanship: Clean, maintainable, and well-documented code
+- Professional communication: Clear documentation and commit messages
+- Attention to detail: Polish, error handling, and edge cases
 
 ---
 
-**Last Updated:** February 2026
+**Last Updated:** February 2026  
 **Maintained by:** PumaPulse Developer Team
