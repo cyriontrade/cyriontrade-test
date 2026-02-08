@@ -1,18 +1,21 @@
 # Fullstack Developer Technical Assessment
 
-## Chart Integration Task
-
-### Overview
+### Assessment Overview
 
 Technical assessment for senior fullstack developers. Replace the existing Chart.js implementation with TradingView Lightweight Charts and implement advanced interactive features.
-
-**Time Estimate:** 4-6 hours
 
 ---
 
 ## Objective
 
 Migrate from Chart.js to TradingView Lightweight Charts and add interactive charting features that demonstrate senior-level expertise.
+### Current Implementation
+
+The existing chart uses Chart.js and looks like this:
+
+![Current Chart Implementation](./assest/chart.png)
+
+*Current Chart.js implementation that needs to be replaced*
 
 ### Important Notes
 
@@ -41,17 +44,9 @@ Replace Chart.js with TradingView Lightweight Charts and implement multiple char
 
 Add interactive capabilities including tooltips, zoom, pan, and technical indicators.
 
-### 3. User Interface
-
-Build an intuitive control panel with chart controls, fullscreen mode, and export functionality.
-
-### 4. Performance and Optimization
+### 3. Performance and Optimization
 
 Ensure smooth performance with efficient data handling and proper state management using custom hooks.
-
-### 5. Responsive Design and Accessibility
-
-Ensure functionality across all devices with proper keyboard navigation and screen reader support.
 
 ---
 
@@ -66,33 +61,21 @@ Ensure functionality across all devices with proper keyboard navigation and scre
 
 ## Evaluation
 
-**Architecture and Code Quality (30%)**
-- Clean, maintainable code
-- Proper component structure
-- Reusable hooks
-- Good React patterns
+**Architecture and Code Quality — 40%**
+- Clear structure and organization of components and hooks
+- Code readability, maintainability, and appropriate React patterns
 
-**Feature Implementation (30%)**
-- All features working
-- Smooth interactions
-- No critical bugs
-- Edge cases handled
+**Feature Implementation and Correctness — 30%**
+- Required chart features function correctly and reliably
+- No critical bugs or broken interactions under normal usage
 
-**Performance (20%)**
-- Smooth animations
-- Efficient rendering
-- Optimized code
-- Small bundle impact
+**Performance and Data Handling — 20%**
+- Efficient data usage and chart updates
+- No obvious performance issues during interaction
 
-**User Experience (10%)**
-- Intuitive controls
-- Responsive design
-- Visual polish
-
-**Error Handling (10%)**
-- Robust error handling
-- Clear messages
-- Recovery mechanisms
+**Error Handling and Resilience — 10%**
+- Reasonable handling of API or data errors
+- Application remains stable in failure scenarios
 
 ---
 
@@ -105,24 +88,20 @@ Create branch `feature/tradingview-chart` and submit a pull request with impleme
 ## Resources
 
 - [TradingView Lightweight Charts](https://tradingview.github.io/lightweight-charts/)
-- Existing codebase for reference
 
 ---
 
-## Timeline Guidance
+## Final Notes
 
-- Hours 1-2: Setup and basic implementation
-- Hours 2-4: Features and interactions
-- Hours 4-5: Polish and optimization
-- Hours 5-6: Documentation and testing
+This assessment is designed to evaluate real-world development skills. We are looking for:
 
----
-
-## Success Criteria
-
-Deliver a production-quality chart implementation that demonstrates senior-level skills in architecture, performance optimization, and user experience design.
+- **Quality over quantity:** Well-implemented core features are better than rushed complete features
+- **Problem-solving ability:** How you approach challenges and make decisions
+- **Code craftsmanship:** Clean, maintainable, and well-documented code
+- **Professional communication:** Clear documentation and commit messages
+- **Attention to detail:** Polish, error handling, and edge cases
 
 ---
 
-**Version:** 2.0  
 **Last Updated:** February 2026
+**Maintained by:** PumaPulse Developer Team
